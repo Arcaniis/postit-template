@@ -5,5 +5,3 @@ class CreateCategory < ActiveRecord::Migration
     end
   end
 end
-
-#Need to migrate still
