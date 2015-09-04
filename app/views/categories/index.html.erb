@@ -1,0 +1,11 @@
+<%= render 'shared/content_title', title: 'All Categories' %>
+
+<div class='row'>
+	<div class='span8 well'>
+		<% @categories.each do |cat| %>
+			<p>
+				<span class='badge'><%= link_to("#{cat.name}", category_path(cat[:id])) %></span>
+			</p>
+		<% end %>
+	</div>
+</div>
